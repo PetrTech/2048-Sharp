@@ -41,7 +41,7 @@ namespace _2048
                     {
                         int positionX = (settings.padding + settings.tileSize) * x;
                         int positionY = (settings.padding + settings.tileSize) * y;
-                        Raylib.DrawRectangle(positionX, positionY, settings.tileSize, settings.tileSize, Raylib.Fade(Color.BLACK, 0.3f));
+                        Raylib.DrawRectangle(positionX + (1280 / 2) - (dimensions / 2) + (int)(settings.padding * 1.5f) - 1, positionY + (720 / 2) - (dimensions / 2) + settings.padding + 90, settings.tileSize, settings.tileSize, Raylib.Fade(Color.BLACK, 0.3f));
                     }
                 }
 
